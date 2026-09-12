@@ -44,5 +44,66 @@ It is always good to test out a sample dataset before running our custom dataset
 <p align="center">
    <img src="doc/1.png">
 </p>
+
 ## Upload the train.py script
 Upload the train.py (link below) to content. Remember to set the path and label_map correctly.
+<p align="center">
+   <img src="doc/2.png">
+</p>
+
+### Set hyperparameters in the object detector
+
+Select EfficientDet_lite2 with 100 epochs and batchsize 16 as a start. Do not run on batchsize 32 or 64 as you will get error due to the large memory required.
+
+To speed up, please consider using the smallest model (efficientdet-lite0) and batchsize 16.
+<p align="center">
+   <img src="doc/3.png">
+</p>
+
+## Ekstrak dataset di Colab
+```
+!unzip -q dataset.zip -d /content/dataset
+```
+## atau mount ke Google Drive
+```
+from google.colab import drive
+drive.mount('/content/drive',force_remount=True)
+```
+## Installing some additional packages
+```
+%%shell
+eval "$(conda shell.bash hook)"
+conda activate myenv
+pip install ipykernel
+```
+
+```
+%%shell
+eval "$(conda shell.bash hook)"
+conda activate myenv
+pip install opencv-python
+python --version
+```
+
+```
+
+%%shell
+eval "$(conda shell.bash hook)"
+conda activate myenv
+pip install numpy==1.23.4
+```
+
+```
+%%shell
+eval "$(conda shell.bash hook)"
+conda activate myenv
+pip install pycocotools
+```
+
+```
+%%shell
+eval "$(conda shell.bash hook)"
+conda activate myenv
+pip install --upgrade matplotlib
+```
+
