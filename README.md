@@ -44,14 +44,14 @@ It is always good to test out a sample dataset before running our custom dataset
 <p align="center">
    <img src="doc/1.png">
 </p>
+<p align="center">
+   <img src="doc/4.png">
+</p>
 
 ## Upload the train.py script
 Upload the train.py (link below) to content. Remember to set the path and label_map correctly.
 <p align="center">
    <img src="doc/2.png">
-</p>
-<p align="center">
-   <img src="doc/4.png">
 </p>
 
 ### Set hyperparameters in the object detector
