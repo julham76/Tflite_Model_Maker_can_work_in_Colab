@@ -4,7 +4,9 @@ How do we solve the perennial Tflite Model Maker issue? A lot of researchers was
 
 Many researchers have tried to downgrade the Colab to version 3.9 using this command
 
+```
 !sudo apt-get install python3.9
+```
 
 but nothing works!
 
