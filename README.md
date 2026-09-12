@@ -106,4 +106,23 @@ eval "$(conda shell.bash hook)"
 conda activate myenv
 pip install --upgrade matplotlib
 ```
+## Training Script
+```
+%%shell
+eval "$(conda shell.bash hook)"
+conda activate myenv
+python Train.py
+```
+
+## Finally copy the output .tflite and labels to test at Raspberry Pi.
+
+TFLITE_FILENAME = 'trained_model.tflite'
+
+LABELS_FILENAME = 'model-labels.txt'
+
+## REFERENCE
+- https://medium.com/@elvenkim1/finally-tflite-model-maker-can-work-in-colab-f21cd58e8524
+- videoguide: https://youtu.be/Enysj0IVEno
+- script: https://github.com/elvenkim1/tflite-model-maker/blob/main/Train.py
+- dataset: https://universe.roboflow.com/roboflow-jvuqo/football-players-detection-3zvbc
 
