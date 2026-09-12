@@ -51,7 +51,7 @@ Upload the train.py (link below) to content. Remember to set the path and label_
    <img src="doc/2.png">
 </p>
 <p align="center">
-   <img src="doc/2.png">
+   <img src="doc/4.png">
 </p>
 
 ### Set hyperparameters in the object detector
